@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-origin: padding-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  /* background-color: #636363; */
+  background: #f1f3f5;
+}
+
+.calculator {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.calc-container {
+  background-color: #1d1d1d;
+
+  width: 300px;
+  height: auto;
+
+  border-radius: 0 0 30px 30px;
+}
+
+.output {
+  width: auto;
+
+  background-color: #18b893;
+  border-radius: 25px 25px 0 0;
+  border: 1px groove #1d1d1d;
+  border-width: 1px 1px 0px 1px;
+}
+
+.operation {
+  width: auto;
+  height: 70px;
+
+  color: #878787;
+
+  font-size: 1.9em;
+  font-weight: bold;
+
+  position: relative;
+  overflow: hidden;
+}
+.operation .value {
+  position: absolute;
+
+  bottom: 5px;
+  right: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.result {
+  width: 300px;
+  height: 80px;
+
+  color: #fff;
+
+  font-size: 1.6em;
+  font-weight: bold;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.result .value {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #fff;
+
+  border-radius: 0 0 25px 25px;
+  border: 1px groove #1d1d1d;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row button {
+  width: 50px;
+  height: 50px;
+
+  font-size: 1.5em;
+
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  margin: 8px;
+
+  cursor: pointer;
+}
+
+.row button:hover {
+  font-weight: bold;
+}
+
+.row #calculate {
+  color: #fff;
+  background-color: #46e0bc;
+  width: 56px;
+  border-radius: 50px;
+}
+.row #delete {
+  color: #fff;
+  background-color: #e05046;
+}
+#pi,
+#division,
+#multiplication,
+#subtraction,
+#addition {
+  color: #18b893;
+}
+
+.input button span {
+  font-size: 0.6em;
+  position: absolute;
+}
+
+.active-angle {
+  background-color: #1d1d1d !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
